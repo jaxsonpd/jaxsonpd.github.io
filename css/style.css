@@ -1,0 +1,49 @@
+:root {
+    --bg-color: bisque;
+    --text-color: #000000;
+    --box-color: #000000;
+    --font: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--font);
+}
+
+h1 {
+    font-size: 12px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--box-color);
+}
+
+.navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: var(--text-color);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: underline;
+}
+
+.navbar a:hover {
+    color: var(--text-color);
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a, .navbar .dropdown {
+    float: none;
+    display: block;
+    text-align: left;
+    }
+}
+
